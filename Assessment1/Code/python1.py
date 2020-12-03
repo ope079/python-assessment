@@ -183,7 +183,11 @@ def five(input):
 
 
 def six(input):
-    return False
+	for i in range(len(input)):
+		if (input[i] == "c" and "ie" in input[ : i]) or ("ie" in input and "c" not in input) or ( input[i] == "c" and "ei" in input[i:] ) :
+			return True
+		elif (input[i] == "c" and "ie" in input[i:]) or ("c" not in input and "ei" in input):
+			return False
 
 	# <QUESTION 7>
 
