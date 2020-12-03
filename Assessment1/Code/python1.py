@@ -132,9 +132,10 @@ def four(arg1):
 	string = arg1.split(" ")
 	list_int = []
 	for i in string:
-		summation = sum(int(i.split()))
-		list_int.append(summation)
-	return max(summation)
+		for j in i:
+			summ = j+j
+			list_int.append(summ)
+	return max(list_int)
 
 	# <QUESTION 5>
 
