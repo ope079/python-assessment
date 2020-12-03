@@ -132,10 +132,10 @@ def four(arg1):
 	string = " ".split(arg1)
 	list_int = []
 	for i in string:
-		summation = sum(int( for i in ("".split(i))))
+		summation = sum(int("".split(i)))
 		list_int.append(summation)
 	return max(summation)
-print(four("55 72 86"))
+
 	# <QUESTION 5>
 
     # Given a large string that represents a csv, the structure of each record will be as follows:
@@ -200,7 +200,13 @@ def six(input):
 	# How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    return 0
+	input1 = input.lower()
+	vowels = ['a','e','i','o','u']
+	count = 0
+	for i in range(len(input1)):
+		if input1[i] in vowels:
+			count += 1
+	return count
 
 	# <QUESTION 8>
 
@@ -218,7 +224,11 @@ def seven(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-	return 1
+	num_list = range(1, input + 1)
+	num = 1
+	for i in num_list:
+		num *= i
+	return num
 
 	# <QUESTION 9>
 
