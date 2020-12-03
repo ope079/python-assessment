@@ -249,7 +249,13 @@ def eight(input):
 	# Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-	return -1
+	string = inputString.replace(" ", "")
+	count = 0
+	if string.find(char) + 1 > 0:
+		count = string.find(char) + 1 
+	else:
+		count = -1
+	return count
 
 	# <QUESTION 10>
 
