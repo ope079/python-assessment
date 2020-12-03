@@ -129,10 +129,10 @@ def three(arg1):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-	string = " ".split(arg1)
+	string = arg1.split(" ")
 	list_int = []
 	for i in string:
-		summation = sum(int("".split(i)))
+		summation = sum(int(i.split()))
 		list_int.append(summation)
 	return max(summation)
 
