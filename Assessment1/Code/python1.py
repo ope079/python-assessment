@@ -275,4 +275,9 @@ def nine(inputString, char):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
 def ten(string, int, char):
-	return False
+	if int > len(string):
+		return False
+	if int  == string.lower().find(char) + 1:
+		return True
+	else:
+		return False
